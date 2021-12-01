@@ -1,0 +1,168 @@
+
+#title div p{
+    margin-bottom:0;
+}
+
+
+
+.to-do-area-full{
+    /* position: relative; */
+    /* padding-right:10em; */
+    width:60em;
+}
+.to-do-table-main{
+    display:flex;
+    border-top: 5px/5px;
+    padding:0  0.5em;
+    align-items: center;
+    /* position: absolute; */
+
+
+}
+
+.to-do-table-description {
+    display: flex;
+    margin-left: 1.5em;
+    margin-right:1.5em;
+    padding: 0.5em;
+    padding-bottom: 1em;
+
+
+}
+
+.to-do-table-main .child{
+    display: inline-block; 
+    word-wrap: break-word;
+    margin-top: 0.5em;
+    
+}
+.time-date{
+    font-size: x-small;
+ 
+}
+/* .time-date-block{
+    margin:0;
+    padding:0;
+} */
+
+.child {
+
+    padding-right: 2em;
+}
+
+#finishButton {
+    width: 5%;
+    padding:0;
+    margin:0;
+    align-items: center;
+
+    /* border:solid; */
+}
+
+#finishButtonInside {
+    color: green;
+    border: none;
+    align-items: center;
+    background-color: inherit;
+
+    
+
+}
+
+#finishButtonInsideEmpty {
+    color: black;
+    border: none;
+    background-color: inherit;
+
+}
+
+.adjust {
+    border: none;
+    background-color: inherit;
+}
+
+.delete {
+    border: none;
+    background-color: inherit;
+}
+
+#head0 {
+    width: 5%;
+    align-items: center;
+
+}
+
+#head1{
+    width: 35%;
+    text-align: center;
+}
+
+#head2{
+    width: 20%;
+}
+#head3{
+    width: 10%;
+}
+#head4{
+    width: 15%;
+}
+#head5{
+    width: 7.5;
+}
+#head6{
+    width: 7.5%;
+}
+
+#box1{
+    width: 35%;
+    
+}
+#box2{
+    width: 20%;
+    text-align: center;
+}
+#box3{
+    width: 10%;
+    text-align: center;
+}
+#box4{
+    width: 15%;
+    text-align: center;
+}
+
+#box5{
+    text-align: center;
+    margin: 1rem;
+}
+#box6{
+    width: 7.5%;
+    text-align: center;
+
+}
+
+#box7 {
+    width: 7.5%;
+    text-align: center;
+
+}
+.description{
+    margin: 1rem 1rem 1rem 0rem;
+    word-wrap: break-word;
+    width: 90%;
+    display: inline-block;
+    padding-right: 2em;
+    /* font-size: 10em; */
+}
+
+.chevron {
+    transform: rotate(0deg);
+    transition: transform 0.25s ease-in-out;
+
+}
+
+.chevron-click {
+    transform: rotate(180deg);
+    transition: transform 0.25s ease-in-out;
+
+
+}

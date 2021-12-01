@@ -1,0 +1,85 @@
+.panel .items{
+    list-style-type: none;
+    border: none;
+    color:black;
+    padding-right: 3em;
+    margin-top:0.5em;
+    padding-left: 1em;
+    padding-top:0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 15px/15px;
+    user-select: none;
+    width:100%;
+    margin-right: 1.5em;
+
+}
+.panel{
+    border-right:solid;
+    border-color:rgb(167, 167, 167);
+    border-width:thin;
+}
+.panel .items:hover{
+    background-color: rgb(236, 235, 235);
+    color: rgb(110, 107, 14);
+}
+.link{
+    text-decoration: none;
+    display: flex;
+    min-width: 0;
+  
+}
+.icon{
+    color:black;
+    margin-bottom: 0.25em;
+    margin-right: 1em;
+}
+
+.panel .item{
+    list-style-type: none;
+    padding-left: 1em;
+
+}
+.panel #id{
+    list-style-type: none;
+}
+.panel{ 
+    position: absolute;
+    padding-left: 3.3em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    /* overflow: hidden; */
+
+    /* border: solid; */
+}
+.wrap{
+    margin-left:4em;
+    position: fixed;
+    white-space:nowrap;
+
+}
+
+.logout{
+    /* margin-top: 2em; */
+    list-style-type: none;
+}
+.logoutBut{
+    margin-top:2em;
+    margin-left:1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    width:60%;
+    border-radius: 15px/15px;
+    border:none;
+    color:white;
+    background-color: rgb(172, 172, 172);
+    margin-bottom:2em;
+}
+
+.logoutBut:hover{
+    background-color: grey;
+
+}
+
+.Add-category{
+    text-align: center;
+}
