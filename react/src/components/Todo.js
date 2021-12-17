@@ -5,6 +5,7 @@ import { map } from 'jquery';
 import randomColor from 'randomcolor';
 import QuickEdit from '../components/QuickEdit.js'
 import AuthContext from '../context/AuthContext';
+import Parser from 'html-react-parser';
 
 const Todo= (props) => {
     let {authTokens} = useContext(AuthContext)
@@ -59,12 +60,12 @@ const Todo= (props) => {
             <div className="to-do-table-main"onClick={(e)=> {setToggle(!toggle);}} style={{background: "linear-gradient(to right, " + color1 + ", " + color2 + ")", color: 'black', boxShadow: '3px 5px 5px ' + color2}} >
                 <div className="child" id="finishButton"> {finished ? <button id="finishButtonInside" onClick={(e) => {e.stopPropagation(); props.handleFinishedClick(id);}}> <FaCheckCircle/> </button> : <button id="finishButtonInsideEmpty" onClick={(e) => {e.stopPropagation(); props.handleFinishedClick(id);}}> <FaRegCircle/> </button> }</div>
                 <div className="child" id="box1">
-                    <p className="task">{task}</p>
+                    <p className="task">{Parser(task)}</p>
                     <div className="time-date-block">
                         <p className="time-date" >{dueTime} on {dueDate}</p>
                     </div>
                 </div>
-                <div className="child" id="box2"><p className="category" >{category != -1 ? props.categoryDatas.find(x => x.id === category).name : ""}</p></div>
+                <div className="child" id="box2"><p className="category" >{Parser(category != -1 ? props.categoryDatas.find(x => x.id === category).name : "")}</p></div>
                 <div className="child" id="box3"><p className="time" >{dueTime}</p></div>
                 <div className="child" id="box4"><p className="date" >{dueDate}</p></div>
                 <div className="child" id="box6"><button className="delete" onClick={(e) => {e.stopPropagation(); props.handleDeleteClick(id);}}>          <FaRegTrashAlt></FaRegTrashAlt></button></div>

@@ -119,14 +119,14 @@ const CategoryForm = (props) => {
                 <hr className="categoryformhr"/>
             
                 {/* Create category list and loop through each category item to display. */}
-                {/* <div className="categorylist">
+                {<div className="categorylist">
                 {Object.entries(props.categories).map(([key, value]) => (
                         <div key={"categoryitemblock_" + key} className="categoryitem">
                             <p className="nomargin" id={"categoryitem_" + key}> <b> {props.categories[key].name} </b> </p>
                             <button className="categorydeletebutton" id={"dcategoryitem_" + key} onClick={e => deleteCategory(e.target.id, props.categories[key].name)}> Delete </button>
                         </div>
                     ))}
-                </div> */}
+                </div> }
                 
                 {/* Category add area - On left is text input, on right is the button to add the category to the list. */}
                 <div className="categoryaddarea">

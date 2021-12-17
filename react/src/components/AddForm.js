@@ -112,13 +112,13 @@ const AddForm = (props) => {
           {/* Each item contains a name to input and the input box. Input box sets the item info into the state. */}
           <div className="item">
             <p className="nomargin"> <b> Task Name </b> </p>
-            <div className="ta" contentEditable="true" onInput={e => {setTaskName(e.target.innerHTML.replace(/&nbsp;/g, ' ')); setShowAddTaskNameError(false);}}/>
+            <div className="ta" contentEditable="true" onInput={e => {setTaskName(e.target.innerHTML); setShowAddTaskNameError(false);}}/>
             <p style={{display: showAddTaskNameError ? "block" : "none", color: "red"}}> Cannot leave task name blank! </p>
           </div>
 
           <div className="item">
             <p className="nomargin"> <b> Description </b> </p>
-            <div className="tadescription" contentEditable="true" onInput={e => {console.log(e.target.innerHTML); setDescription(e.target.innerHTML.replace(/&nbsp;/g, ' ').replaceAll("</div>", "").replace(/(<\/?[^>]+>)/gi, '\n')); setShowAddTaskDescriptionError(false);}}/>
+            <div className="tadescription" contentEditable="true" onInput={e => {console.log(e.target.innerHTML); setDescription(e.target.innerHTML); setShowAddTaskDescriptionError(false);}}/>
             <p style={{display: showAddTaskDescriptionError ? "block" : "none", color: "red"}}> Cannot leave description blank! </p>
           </div>
 
