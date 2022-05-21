@@ -9,15 +9,15 @@ Names: Albert Lu, Kha Nguyen, Le Pham
 
 To run the frontend:
 
-Make sure node.js is installed.
-Download the frontend folder.
-Extract to a different folder.
-Run "npm install" where the "package.json" file is.
-Run "npm start".
-To run the backend:
+Make sure node.js is installed.<br />
+Download the frontend folder.<br />
+Extract to a different folder.<br />
+Run "npm install" where the "package.json" file is.<br />
+Run "npm start".<br />
+To run the backend:<br />
 
-Make sure Python is installed.
-Download the backend folder.
-Extract to a different folder.
-Run "pip install -r requirements.txt" where the "requirements.txt" file is.
+Make sure Python is installed.<br />
+Download the backend folder.<br />
+Extract to a different folder.<br />
+Run "pip install -r requirements.txt" where the "requirements.txt" file is.<br />
 Run "python manage.py runserver".
